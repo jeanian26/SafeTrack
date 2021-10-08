@@ -1,9 +1,15 @@
+/* eslint-disable import/no-duplicates */
+/* eslint-disable prettier/prettier */
 import firebase from 'firebase/app'
 import 'firebase/auth'
+import 'firebase/firestore'
+import { doc, setDoc, addDoc, collection, onSnapshot } from 'firebase/firestore'
 
 export const logoutUser = () => {
   firebase.auth().signOut()
 }
+
+export const db = firebase.firestore
 
 export const signUpUser = async ({ name, email, password }) => {
   try {

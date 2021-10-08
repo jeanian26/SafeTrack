@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import firebase from 'firebase/app'
 import 'firebase/auth'
+import 'firebase/firestore'
 import { theme } from './src/core/theme'
 import {
   AuthLoadingScreen,
@@ -14,6 +15,10 @@ import {
   ResetPasswordScreen,
   Dashboard,
   Settings,
+  Home,
+  SocialNetwork,
+  Map,
+  Video,
 } from './src/screens'
 import { FIREBASE_CONFIG } from './src/core/config'
 
@@ -41,6 +46,10 @@ export default function App() {
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
           <Stack.Screen name="Settings" component={Settings} />
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="SocialNetwork" component={SocialNetwork} />
+          <Stack.Screen name="Map" component={Map} />
+          <Stack.Screen name="Video" component={Video} />
           <Stack.Screen
             name="ResetPasswordScreen"
             component={ResetPasswordScreen}
