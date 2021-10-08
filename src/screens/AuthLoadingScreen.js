@@ -3,11 +3,13 @@ import { ActivityIndicator } from 'react-native'
 import firebase from 'firebase/app'
 import Background from '../components/Background'
 import { theme } from '../core/theme'
+import { FIREBASE_CONFIG } from '../core/config'
 
 export default function AuthLoadingScreen({ navigation }) {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       // User is logged in
+      FIREBASE_CONFIG.userID = user.uid
       navigation.reset({
         index: 0,
         routes: [{ name: 'Dashboard' }],
