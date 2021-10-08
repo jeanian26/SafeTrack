@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { Text } from 'react-native-paper'
@@ -9,7 +10,7 @@ export default function Header(props) {
 
 const styles = StyleSheet.create({
   header: {
-    fontSize: 21,
+    fontSize: 28,
     color: theme.colors.primary,
     fontWeight: 'bold',
     paddingVertical: 12,

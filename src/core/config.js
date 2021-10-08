@@ -1,11 +1,10 @@
-// Replace with your own firebase config!
+/* eslint-disable prettier/prettier */
 export const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyBDsdN3XWM5D2-c_ti5j44GrhMnBHNmSF0',
-  authDomain: 'react-native-market-2861b.firebaseapp.com',
-  databaseURL: 'https://react-native-market-2861b.firebaseio.com',
-  projectId: 'react-native-market-2861b',
-  storageBucket: 'react-native-market-2861b.appspot.com',
-  messagingSenderId: '878215484396',
-  appId: '1:878215484396:web:c36074bccb0b5693b0a6c9',
-  measurementId: 'G-317PLP59P2',
+  apiKey: 'AIzaSyALWJDjGJ4PDcJ5j7XZewfcdtlbwsQAxsw',
+  authDomain: 'safetrack-579c5.firebaseapp.com',
+  databaseURL: 'https://safetrack-579c5-default-rtdb.firebaseio.com',
+  projectId: 'safetrack-579c5',
+  storageBucket: 'safetrack-579c5.appspot.com',
+  messagingSenderId: '1016427529309',
+  appId: '1:1016427529309:web:57584804a491e3f4ce39b4',
 }

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react'
 import Background from '../components/Background'
 import BackButton from '../components/BackButton'
